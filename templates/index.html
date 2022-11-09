@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Diabetes prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Diabetes Prediction</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+      </ul>
+
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+     <h5 style="text-align: center; color: brown; font-weight: 600;">{{pred}}</h5>
+      <h1 class="header center orange-text">Diabetes Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of having Diabetes
+        <br>
+        </h5>
+      </div>
+
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+            <div class="row">
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Polyuria</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="1" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>polydipsia </b></label>
+                    <br>
+                    <input id="last_name" name="2" placeholder="yes or no"  type="text" class="validate">
+    
+                </div>
+    
+                <div class="input-field col s4">
+                    <label for="_name"><b>weakness</b></label>
+                    <br>
+                    <input id="_name" name="3" placeholder="yes or no" type="text" class="validate">
+    
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>partial paresis</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="4" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>sudden weight loss</b></label>
+                    <br>
+                    <input id="last_name" name="5" placeholder="yes or no"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                  <label ><b>visual blurring</b></label>
+                  <br>
+                  <input name = '6' placeholder="yes or no">
+
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>itching</b></label>
+                    <br>
+                    <input id="last_name" name="7" placeholder="yes or no"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Polyphagia</b></label>
+                    <br>
+                    <input id="last_name" name="8" placeholder="yes or no"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="_name"><b>Age</b></label>
+                    <br>
+                    <input id="_name" name="9" placeholder="Age" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>delayed healing</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="10" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>muscle stiffness</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="11" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Irritability</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="12" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Gential thrush</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="13" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Alopecia</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="14" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Obesity</b></label>
+                    <br>
+                    <input placeholder="yes or no" name="15" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Gender</b></label>
+                    <br>
+                    <input placeholder="Enter your Gender" name="16" id="first_name" type="text" class="validate">
+                </div>
+          </div>
+    
+          <div class="row center">
+    
+              <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+
+          </div>
+        </form>
+  </div>
+
+      <br>
+
+     
+    <br><br>
+  </div>
+  </div>>
+
+  
+    <div class="footer-copyright">
+      <div class="container" style="padding-bottom: 1rem; position: fixed; font-size: 1.2rem; margin-left: 5rem;">
+      <p> N Kushal Kumar Raju</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
